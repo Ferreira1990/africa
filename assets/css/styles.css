@@ -1,0 +1,166 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* VIDEO CONTAINER------------------ ------------------------------------------------------------------------------- */
+
+.customcontainer{
+    height: 100vh;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajustar el video para cubrir todo el contenedor */
+    z-index: -1;
+}
+
+/* NAVBARRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR  -------------------------------------------------------------------------------*/
+
+
+
+
+
+/* SECCION DE TITULO Y BOTONES--------------------------------------------------------------------------------------- */
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: left;
+}
+
+main h1{
+    font-size: 170px;
+    color: transparent;
+    -webkit-text-stroke: 2px white;    
+    margin-top: 55px; 
+    margin-left:100px;
+    margin-bottom: 0;
+
+}
+
+main h2{
+    color: white;
+    font-size: 70px;
+    margin-left:100px;
+    margin-bottom: 40px;
+
+
+}
+
+section{
+    display: flex;
+    align-items: center; 
+    margin-left:100px;
+    width: 100%; 
+    margin-bottom: 80px;  
+   
+}
+
+#Ticket{
+    border: 2px solid rgb(114, 60, 37);
+    background-color: transparent;
+    border-radius: 20px;
+    width: 150px;
+    height: 34px;
+    color: white;
+    box-shadow: 2px 2px rgb(114, 60, 37);
+}
+
+#Ticket:hover{
+
+    background-color: rgb(90, 45, 37);
+    transition:  all 1s;
+
+}
+
+p{
+    display: flex;
+    text-align: center;
+    color: white;
+    align-items: center;
+    margin: 0 10px 0 40px;
+
+}
+
+
+
+
+
+
+
+
+/* MEDIAQUERYS----------------------------------------------------------------------------- */
+
+@media (max-width: 850px){
+
+    main h1{
+        font-size: 80px;
+        color: transparent;
+        -webkit-text-stroke: 2px white;    
+        text-align: center;
+        margin: 50px 0 0 0;
+    
+    }
+
+    main h2{
+        color: white;
+        font-size: 30px;
+        text-align: center;
+        margin: 0;
+    }
+
+    section{
+        display: flex;
+        justify-content: center;
+        flex-direction: end;
+        align-items: end;        
+       height: 320px;
+        margin: 0;
+
+       
+    }
+
+    #Ticket{
+
+        border: 2px solid rgb(114, 60, 37);
+        background-color: transparent;     
+        border-radius: 20px;
+        width: 150px;
+        height: 34px;
+        color: white;
+    }
+    
+    p{
+        display: flex;
+        text-align: center;
+        color: white;
+        align-items: center;
+        margin: 0 10px 0 40px;
+        height: 34px;
+    
+    }
+
+    #playcustom{
+        height: 34px;
+        display: flex;
+        align-items: center;
+    }
+
+}
