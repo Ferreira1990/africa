@@ -37,6 +37,7 @@ video {
 
 
 
+
 /* SECCION DE TITULO Y BOTONES--------------------------------------------------------------------------------------- */
 
 
@@ -67,7 +68,7 @@ main h2 {
 }
 
 section {
-    display: flex;
+    display: flex;       
     align-items: center;
     margin-left: 100px;
     width: 100%;
@@ -96,25 +97,43 @@ p {
     display: flex;
     text-align: center;
     color: white;
+    align-items: center;   
+
+}
+
+.abox{
+    display: flex;
+    justify-content: center;
     align-items: center;
-    margin: 0 10px 0 40px;
-
-}
-
-#cstmbtn {
-    border-radius: 100%;
-    width: 35px;
+    text-align: center;  
+    width: 90px;
     height: 34px;
-    text-align: center;
-    background-color: transparent;
-    border: solid 2px rgb(251, 255, 0);
-    color: white;
+    border-radius: 20px;
 }
 
-#cstmbtn:hover {
-    background-color: rgb(251, 255, 0);
-    transition: all 1s;
+.abox a{
+    text-decoration: none;
 }
+
+.customplay:hover{
+    transition: all 1.8s;   
+    color: yellow!important;  
+}
+
+
+
+
+
+
+
+section a{
+    text-decoration: none;
+   
+}
+
+
+
+
 
 
 
