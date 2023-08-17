@@ -33,6 +33,14 @@ video {
 
 /* NAVBARRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR  -------------------------------------------------------------------------------*/
 
+ul li {
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-shadow: 1px 1px black;
+
+}
+
+
 
 
 
@@ -49,6 +57,7 @@ main {
 }
 
 main h1 {
+    width: fit-content;
     font-size: 170px;
     color: transparent;
     -webkit-text-stroke: 2px white;
@@ -63,30 +72,30 @@ main h2 {
     font-size: 70px;
     margin-left: 100px;
     margin-bottom: 40px;
+    width: fit-content;
 
 
 }
 
 section {
-    display: flex;       
-    align-items: center;
+    display: flex;
     margin-left: 100px;
     width: 100%;
     margin-bottom: 80px;
 
 }
 
-#Ticket {
-    border: 2px solid rgb(114, 60, 37);
-    background-color: transparent;
-    border-radius: 20px;
-    width: 150px;
-    height: 34px;
+.tcus {
+    background: transparent;
+    border: 2px rgb(102, 58, 58) solid;
+    padding: 0.3rem 3rem;
     color: white;
-    box-shadow: 2px 2px rgb(114, 60, 37);
+    font-weight: 300;
+    border-radius: 20px;
 }
 
-#Ticket:hover {
+
+.tcus:hover {
 
     background-color: rgb(90, 45, 37);
     transition: all 1.5s;
@@ -97,38 +106,44 @@ p {
     display: flex;
     text-align: center;
     color: white;
-    align-items: center;   
+    align-items: center;
 
 }
 
-.abox{
+.abox {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;  
+    text-align: center;
     width: 90px;
     height: 34px;
     border-radius: 20px;
 }
 
-.abox a{
+.abox a {
     text-decoration: none;
 }
 
-.customplay:hover{
-    transition: all 1.8s;   
-    color: yellow!important;  
+.customplay {
+    align-items: center;
+}
+
+.customplay:hover {
+    transition: all 1.8s;
+    color: yellow !important;
 }
 
 
 
 
 
+secion {
+    width: 100%;
+    height: 80%;
+}
 
-
-section a{
+section a {
     text-decoration: none;
-   
 }
 
 
@@ -141,8 +156,15 @@ section a{
 
 @media (max-width: 850px) {
 
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     main h1 {
-        font-size: 80px;
+        font-size: 100px;
         color: transparent;
         -webkit-text-stroke: 2px white;
         text-align: center;
@@ -152,7 +174,7 @@ section a{
 
     main h2 {
         color: white;
-        font-size: 30px;
+        font-size: 35px;
         text-align: center;
         margin: 0;
     }
@@ -160,22 +182,21 @@ section a{
     section {
         display: flex;
         justify-content: center;
-        flex-direction: end;
-        align-items: end;
+        flex-direction: column;
+        align-items: center;
         height: 320px;
         margin: 0;
 
 
     }
 
-    #Ticket {
-
+    .tcus {
         border: 2px solid rgb(114, 60, 37);
         background-color: transparent;
         border-radius: 20px;
-        width: 150px;
-        height: 34px;
         color: white;
+        margin-bottom: 20px;
+        margin-top: 60px;
     }
 
     p {
@@ -188,10 +209,11 @@ section a{
 
     }
 
-    #playcustom {
+    .customplay {
         height: 34px;
         display: flex;
         align-items: center;
+        margin-top: 30px;
     }
 
 }
